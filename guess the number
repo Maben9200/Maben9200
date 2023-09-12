@@ -6,17 +6,17 @@ int main()
    int low = 1, high = 100;
    do
    {
-       cont << "Player 1, please enter your guess:" << endl;
+       cout << "Player 1, please enter your guess:" << endl;
        cin >> guess;
        
        if (guess == number)
-           cont << "Player 1, you win!!!" << endl;
+           cout << "Player 1, you win!!!" << endl;
         
         else if (guess < number)
-            cont << "Sorry, the number is bigger than " << guess << endl;
+            cout << "Sorry, the number is bigger than " << guess << endl;
             
         else
-            cont << "Sorry, the number is smaller than" << guess <<endl;
+            cout << "Sorry, the number is smaller than" << guess << endl;
    } while (number != guess);
    return 0;
     
