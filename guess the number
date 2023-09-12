@@ -1,13 +1,21 @@
 #include <stdio.h>
-
+#
 int main()
-   int number = 10;
+   int number;
+         // use module to do random, add player 1 & 2;
    int guess;
    int low = 1, high = 100;
    do
    {
        cout << "Player 1, please enter your guess:" << endl;
-       cin >> guess;
+       cin >> guess;      
+
+      while (guess < low || guess > high)
+      {
+         count << "Invalid input, please enter a number between "
+               << low <<" and " << high << endl;
+         in >> guess;
+      }
        
        if (guess == number)
            cout << "Player 1, you win!!!" << endl;
