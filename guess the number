@@ -3,6 +3,7 @@
 int main()
    int number = 10;
    int guess;
+   int low = 1, high = 100;
    do
    {
        cont << "Player 1, please enter your guess:" << endl;
